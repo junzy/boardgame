@@ -30,6 +30,13 @@
 			</div>
 		</div>
 	</nav>
+	<script>
+	function makeMove(id){
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', "/spring/executeMove?id=" + id, false);
+		xhr.send();
+	}
+	</script>
 
 	<div class="container">
 
@@ -37,22 +44,30 @@
 			<h1>bol.com board Game</h1>
 			<h2>Message: ${message}</h2>
 		</div>
-		<form action="/spring/makeMove">
 			<table>
 				<tr>
-					<td><button class="editbtn">edit</button></td>
+					<td>Player1's pits</td>
 				</tr>
 				<tr>
-					<td><button class="editbtn">edit</button></td>
+					<td><button id="pit1" onclick="makeMove(this.id)">pit1</button></td>
+					<td><button id="pit2">pit2</button></td>
+					<td><button id="pit3">pit3</button></td>
+					<td><button id="pit4">pit4</button></td>
+					<td><button id="pit5">pit5</button></td>
+					<td><button id="pit6">pit6</button></td>
 				</tr>
 				<tr>
-					<td><button class="editbtn">edit</button></td>
+					<td>Player2's pits</td>
 				</tr>
 				<tr>
-					<td><button class="editbtn">edit</button></td>
+					<td><button id="pit7">pit7</button></td>
+					<td><button id="pit8">pit8</button></td>
+					<td><button id="pit9">pit9</button></td>
+					<td><button id="pit10">pit10</button></td>
+					<td><button id="pit11">pit11</button></td>
+					<td><button id="pit12">pit12</button></td>
 				</tr>
 			</table>
-		</form>
 
 	</div>
 	<!-- /.container -->

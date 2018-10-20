@@ -1,13 +1,17 @@
 package com.mkyong.controller;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import com.mkyong.service.BoardGameService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.context.request.WebRequest;
 
 @Controller
 public class WelcomeController {
@@ -27,10 +31,18 @@ public class WelcomeController {
 	}
 
 	@RequestMapping("/newGame")
-	public String hello(Map<String, Object> model) {
+	public String newGame(@RequestParam("player1") String player1,@RequestParam("player2") String player2) {
+		Map<String, Object> model =  new HashMap<>();
 		model.put("message", "new game created");
-		boardGameService.newGame((String) model.get("player1"), (String) model.get("player2"));
-		System.out.println("creating new game");
+		boardGameService.newGame(player1, player2);
+		System.out.println("creating new game with: " +  player1 + " : " + player2);
+		return "game";
+	}
+	
+	@RequestMapping("/executeMove")
+	public String executeMove(@RequestParam Map<String,String> params, Map<String, Object> model) {
+		model.put("message", "new game created");
+		boardGameService.executeMove(params.get("id"));
 		return "game";
 	}
 
