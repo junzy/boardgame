@@ -1,4 +1,4 @@
-com/mkyong/MainApplication.class
+com/mkyong/controller/WelcomeController.class
 com/mkyong/service/GameManagerService.class
 com/mkyong/model/Board.class
 com/mkyong/service/BoardGameService.class
@@ -7,7 +7,6 @@ com/mkyong/SpringBootWebApplication.class
 com/mkyong/model/PitType.class
 com/mkyong/model/Player.class
 com/mkyong/service/PlayerService.class
-com/mkyong/WelcomeController.class
 com/mkyong/model/BoardGame.class
 com/mkyong/model/Pit.class
 com/mkyong/service/PitService.class
