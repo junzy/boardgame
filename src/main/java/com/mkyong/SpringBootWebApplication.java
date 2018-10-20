@@ -6,8 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@SpringBootApplication(scanBasePackages = { "java.com.mykong.controller",  "java.com.mykong.service"})
-@EnableWebMvc
+@SpringBootApplication
 public class SpringBootWebApplication extends SpringBootServletInitializer {
 
 	@Override
