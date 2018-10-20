@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@SpringBootApplication(scanBasePackages = { "java.com" })
+@SpringBootApplication(scanBasePackages = { "java.com", "java.java.com" })
 @EnableWebMvc
 public class SpringBootWebApplication extends SpringBootServletInitializer {
 
