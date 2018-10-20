@@ -1,7 +1,8 @@
 package com.mkyong;
 
-import java.com.game.service.BoardGameService;
 import java.util.Map;
+
+import com.mkyong.service.BoardGameService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,10 +15,6 @@ public class WelcomeController {
 	@Autowired
 	private BoardGameService boardGameService;
 	
-	
-//	public WelcomeController(BoardGameService boardGameService) {
-//		this.boardGameService = boardGameService;
-//	}
 
 	// inject via application.properties
 	@Value("${welcome.message:test}")
