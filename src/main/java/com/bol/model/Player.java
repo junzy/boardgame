@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.bol.model;
 
 public class Player {
 	private String name;

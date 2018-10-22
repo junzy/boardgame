@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.bol.model;
 public class Pit {
 	private PitType type;
 	private Integer stoneCount;

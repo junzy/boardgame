@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.bol.model;
 
 import java.util.List;
 

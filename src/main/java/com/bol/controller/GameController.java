@@ -1,15 +1,13 @@
-package com.mkyong.controller;
+package com.bol.controller;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import jdk.nashorn.internal.parser.JSONParser;
-
+import com.bol.model.Pit;
+import com.bol.service.BoardGameService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mkyong.model.Pit;
-import com.mkyong.service.BoardGameService;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

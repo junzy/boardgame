@@ -1,4 +1,4 @@
-package com.mkyong.model;
+package com.bol.model;
 
 public enum PitType {
 	NORMAL,

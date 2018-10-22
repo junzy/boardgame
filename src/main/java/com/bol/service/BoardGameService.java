@@ -1,7 +1,7 @@
-package com.mkyong.service;
+package com.bol.service;
 
-import com.mkyong.model.BoardGame;
-import com.mkyong.model.Pit;
+import com.bol.model.BoardGame;
+import com.bol.model.Pit;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;

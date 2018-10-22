@@ -2,9 +2,9 @@ package com.mykong;
 
 import static org.junit.Assert.assertEquals;
 
-import com.mkyong.model.BoardGame;
-import com.mkyong.model.Pit;
-import com.mkyong.model.PitType;
+import com.bol.model.BoardGame;
+import com.bol.model.Pit;
+import com.bol.model.PitType;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
