@@ -5,9 +5,9 @@ public class Pit {
 	private Integer position;
 	
 	public Pit(PitType type, Integer stoneCount, Integer position) {
-		this.type = type;
+		this.setType(type);
 		this.setStoneCount(stoneCount);
-		this.position = position;
+		this.setPosition(position);
 	}
 
 	public Integer getStoneCount() {
@@ -16,5 +16,21 @@ public class Pit {
 
 	public void setStoneCount(Integer stoneCount) {
 		this.stoneCount = stoneCount;
+	}
+
+	public Integer getPosition() {
+		return position;
+	}
+
+	public void setPosition(Integer position) {
+		this.position = position;
+	}
+
+	public PitType getType() {
+		return type;
+	}
+
+	public void setType(PitType type) {
+		this.type = type;
 	}
 }
