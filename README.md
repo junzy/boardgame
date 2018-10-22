@@ -8,7 +8,7 @@ Hi! This is a bol.com board game assignment.
 
 3. Visit `localhost:8080/spring`
 
-![the board game screenshot](https://imgur.com/hONJ37V)
+![the board game screenshot](https://i.imgur.com/hONJ37V.png)
 
 
 
