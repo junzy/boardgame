@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mkyong.model.Pit;
 import com.mkyong.service.BoardGameService;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -25,6 +26,8 @@ public class GameController {
 
 	@Autowired
 	private BoardGameService boardGameService;
+	
+	static final Logger logger = Logger.getLogger(GameController.class);
 
 	// inject via application.properties
 	@Value("${welcome.message:test}")
@@ -41,7 +44,7 @@ public class GameController {
 		Map<String, Object> model = new HashMap<>();
 		model.put("message", "new game created");
 		boardGameService.newGame(player1, player2);
-		System.out.println("creating new game with: " + player1 + " : " + player2);
+		logger.info("creating new game with: " + player1 + " : " + player2);
 		return "game";
 	}
 

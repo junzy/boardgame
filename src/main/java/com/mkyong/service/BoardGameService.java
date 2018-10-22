@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class BoardGameService {
 
-	/** The game. */
+	/** The game instance */
 	private BoardGame game;
 
 	/** The Constant logger. */
@@ -30,7 +30,7 @@ public class BoardGameService {
 	 */
 	// creates a new instance of the game
 	public void newGame(String playerName1, String playerName2) {
-		System.out.println("attempting to start new game");
+		logger.info("Attempting to start new game");
 		// if game isn't already running
 		if (game == null) {
 			this.game = new BoardGame(playerName1, playerName2);
