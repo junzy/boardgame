@@ -1,4 +1,4 @@
-# boardgame
+# Mancala
 
 1. Compile the project using
 `mvn clean install`
