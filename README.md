@@ -1,5 +1,4 @@
 # boardgame
-Hi! This is a bol.com board game assignment.
 
 1. Compile the project using
 `mvn clean install`
